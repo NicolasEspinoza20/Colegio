@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/colegio/core/static/css/paypal.css">
+    <title>Donacion</title>
+    <link rel="icon" type="image/x-icon" href="/colegio/core/static/img/favicon.ico">
+    <script src="https://www.paypal.com/sdk/js?client-id=AXPfpPvZwqz3k8TM8R0hkME8GD8qctAvUloPhb1c7gU4Ehif0TXwtQl9QU8oqEdAMMydE2WQdl_iR-kG&components=YOUR_COMPONENTS%22%3E</script>"></script>
+
+</head>
+
+<body class="bodypaypal">
+    <section>
+
+        <div class="head">
+
+            <div class="logo">
+                <img id="img" src="/colegio/core/static/img/logo.png">
+            </div>
+
+            <nav class="navbar">
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Contacto</a>
+            </nav>
+
+        </div>
+    </section>
+    <div class="card-paypal">
+        <div id="paypal-button-container"></div>
+
+        <script>
+            paypal.Buttons({
+                style: {
+                    color: 'blue',
+                    shape: 'pill',
+                    label: 'pay'
+                },
+                createOrder: function (data, actions) {
+                    return fetch('/demo/checkout/api/paypal/order/create/', {
+                        method: 'post'
+                    }).then(function (res) {
+                        return res.json();
+                    }).then(function (orderData) {
+                        return orderData.id;
+                    });
+                },
+            }).render('#paypal-button-container');
+        </script>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
