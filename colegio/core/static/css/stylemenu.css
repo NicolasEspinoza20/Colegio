@@ -29,13 +29,12 @@ body {
 
 .logo {
     margin-left: 30px;
+    
 }
 
-.logo a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
+img {
+   padding-top: 8px;
+   width:60px;
 }
 
 .navbar a {
@@ -60,7 +59,7 @@ body {
 
 .header {
     height: 60vh !important;
-    background: url(/colegio/core/static/img/header.jpg) no-repeat center;
+    background: url(/colegio/colegio/core/static/img/header.jpg) no-repeat center;
     background-size: cover;
 }
 
