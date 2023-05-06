@@ -1,0 +1,61 @@
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.body-fondo{
+    background: url(/Colegio/colegio/core/static/img/header.jpg);
+}
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+    
+}
+
+img {
+   padding-top: 8px;
+   width:60px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+}
+
+.card{
+    top: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 30vh;
+    background-size: none;
+}
+
+Anotacion{
+    height: 300px;
+}
