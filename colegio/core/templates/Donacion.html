@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="/colegio/core/static/css/paypal.css">
     <title>Donacion</title>
     <link rel="icon" type="image/x-icon" href="/colegio/core/static/img/favicon.ico">
-    <script src="https://www.paypal.com/sdk/js?client-id=AXPfpPvZwqz3k8TM8R0hkME8GD8qctAvUloPhb1c7gU4Ehif0TXwtQl9QU8oqEdAMMydE2WQdl_iR-kG&components=YOUR_COMPONENTS%22%3E</script>"></script>
-
-</head>
-
+    
 <body class="bodypaypal">
     <section>
 
@@ -29,30 +26,51 @@
 
         </div>
     </section>
-    <div class="card-paypal">
-        <div id="paypal-button-container"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <br>
+                <h2>Realizar Donacion</h2>
+                <br>
 
-        <script>
-            paypal.Buttons({
-                style: {
-                    color: 'blue',
-                    shape: 'pill',
-                    label: 'pay'
-                },
-                createOrder: function (data, actions) {
-                    return fetch('/demo/checkout/api/paypal/order/create/', {
-                        method: 'post'
-                    }).then(function (res) {
-                        return res.json();
-                    }).then(function (orderData) {
-                        return orderData.id;
-                    });
-                },
-            }).render('#paypal-button-container');
-        </script>
+            </div>
+            <div class="col p-1">
+                <div class="container p-4">
+                    <div id="paypal-button-container"></div>
+                    <script
+                        src="https://www.paypal.com/sdk/js?client-id=AdFjGOwJCh4h90IyhB_vGCkDbSfakAD6IitR2qFxPOgTtY4Yrd9z_-ycN6ITScW8rqkiDh7EDtOZ8eFs"></script>
+                    <script>
+                        paypal.Buttons({
+                            // Sets up the transaction when a payment button is clicked
+                            createOrder: (data, actions) => {
+                                return actions.order.create({
+                                    purchase_units: [{
+                                        amount: {
+                                            value: '77.44' // Can also reference a variable or function
+                                        }
+                                    }]
+                                });
+                            },
+                            // Finalize the transaction after payer approval
+                            onApprove: (data, actions) => {
+                                return actions.order.capture().then(function (orderData) {
+                                    // Successful capture! For dev/demo purposes:
+                                    console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                                    const transaction = orderData.purchase_units[0].payments.captures[0];
+                                    alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+                                    // When ready to go live, remove the alert and show a success message within this page. For example:
+                                    // const element = document.getElementById('paypal-button-container');
+                                    // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                                    // Or go to another URL:  actions.redirect('thank_you.html');
+                                });
+                            }
+                        }).render('#paypal-button-container');
+                    </script>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
 
 
 
