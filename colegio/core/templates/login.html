@@ -1,32 +1,92 @@
-{% load static %}
+
 <!DOCTYPE html>
-<html leng=”en”>
-<head>
-    <meta charset=”UTF-8”>
-    <meta http-equiv=”X-UA-COMPATIBLE” content=”IE-edge”>
-    <meta name=viewpor” content= width=device-width,
-    Initial-scale=1.0”>
-    <title>Inicio</title>
-    <link rel="stylesheet" href="/colegio/core/static/css/stylemenu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
-<body class="login">
-    <form action="">
-        <h1 class="title">Login</h1>
-        <label>
-            <i class="fa-solid fa-user"></i>        
-            <input type="text" id="username">
-        </label>
-        <label>
-            <i class="fa-solid fa-lock"></i>            
-            <input type="password" id="password">
-            </label>
-            <a href="#" class="link">¿Olvido su clave? </a>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/colegio/core/static/css/stylemenu.css" th:href="@{/colegio/core/static/css/stylemenu.css}">
 
-            <button id="button">Login</button>
-    </form>
+<body>
+    <div class="head">
 
-    <script src=”main.js”></script>
+        <div class="logo">
+
+            <img id="img" src="/Colegio/core/static/img/logo.png">
+
+        </div>
+
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+    </div>
+    <header class="content header">
+        <h2 class="title">Liceo Industrial Miraflores Alto</h2>
+    </header>
+
+    <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <div class="col-10 user-img">
+                    <img src="/Colegio/core/static/img/userlogin.png" th:src="@{//Colegio/core/static/img/userlogin.ico}"/>
+                </div>
+                <form class="col-12" th:action="@{/login}" method="get">
+                    <div class="form-group" id="user-group">
+                        <input type="text" class="form-control" placeholder="Nombre de usuario" name="username"/>
+                    </div>
+                    <div class="form-group" id="contrasena-group">
+                        <input type="password" class="form-control" placeholder="Contrasena" name="password"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar </button>
+                </form>
+                <div class="col-12 forgot">
+                    <a href="#">Recordar contraseña?</a>
+                </div>
+                <div th:if="${param.error}" class="alert alert-danger" role="alert">
+		            Invalid username and password.
+		        </div>
+		        <div th:if="${param.logout}" class="alert alert-success" role="alert">
+		            You have been logged out.
+		        </div>
+            </div>
+        </div>
+    </div>
+
+    <footer >
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <img src="/colegio/core/static/img/logo.png" >
+                <span class="footer-info">322960714-322960715</span>
+                <span class="footer-info">lindustrial@educmvm.cl</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">Horario de Atención</span>
+                    <a href="" class="menu-item-footer">Lunes a Viernes</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">legal</span>
+                    <a href="" class="menu-item-footer">Política de privacidad</a>
+                    <a href="" class="menu-item-footer">Cookies</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">Direcion</span>
+                    <a href="" class="menu-item-footer">Avenida Frei 4137 - Miraflores</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">Donaciones</span>
+                    <a href="/colegio/core/templates/Donacion.html" class="menu-item-footer">PAYPAL</a>
+                </div>
+            </div>
+
+            <div class="footer-content-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3345.2530159595476!2d-71.507889!3d-33.023464!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de9935aaad0d%3A0x81e9a95f381b3c7f!2sLiceo%20Industrial%20Miraflores!5e0!3m2!1ses-419!2sus!4v1683690807170!5m2!1ses-419!2sus" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <span class="copyright">Formando los tecnicos que chile necesita</span>
+        </div>
+    </footer>
 </body>
-<html>
+</html>
