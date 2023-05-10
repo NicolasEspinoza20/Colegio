@@ -1,17 +1,22 @@
+.bodypaypal {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 63px;
     background: #171717;
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 100;
 }
 
-.body-fondo{
-    background: url(/colegio/core/static/img/header.jpg);
-}
 .navbar {
     display: flex;
     margin-right: 10px;
@@ -40,34 +45,9 @@ img {
     background: #3f3f3f;
 }
 
-.card{
-    top: 50px;
-   margin-bottom: 123px;
+.card-paypal{
+    margin-top: 100px;
 }
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-}
-
-.header {
-    height: 12vh;
-    background-size: none;
-    
-}
-
-Anotacion{
-    height: 300px;
-}
-
-.d-flex{
-    margin-bottom: 85px;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
 /**footer**/
 
 footer {
