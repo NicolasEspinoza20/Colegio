@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="/colegio/core/static/css/stylemenu.css">
+
+    <link rel="stylesheet" href="/Colegio/core/static/css/stylemenu.css">
     <title>Menu</title>
-    <link rel="icon" type="image/x-icon" href="/colegio/core/static/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/Colegio/core/static/img/favicon.ico">
+
 
 </head>
 <body>
@@ -15,7 +17,9 @@
     <div class="head">
 
         <div class="logo">
-            <img id="img" src="/colegio/core/static/img/logo.png">
+
+            <img id="img" src="/Colegio/core/static/img/logo.png">
+
         </div>
 
         <nav class="navbar">
@@ -27,63 +31,84 @@
     </div>
 
     <header class="content header">
-        <h2 class="title">Inicio</h2>
+        <h2 class="title">Liceo Industrial Miraflores Alto</h2>
         <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-             Ipsam necessitatibus odio quisquam reprehenderit quas, 
-             obcaecati, harum hic molestiae sequi ipsa nihil id tempore explicabo 
-            libero vero quia asperiores similique dicta.
+            El Liceo Industrial Miraflores Alto Viña del Mar fue creado como Centro Educacional Nº1 de Viña del Mar, por Decreto Nº 1725 del 25 de febrero de 1966
         </p>
-
-        <div class="btn-home">
-            <a href="#" class="btn">Saber mas</a>
-            <a href="#" class="btn">Saber mas</a>
-        </div>
     </header>
 
-    <section class="">
-        <div class="title-cards">
-            <h2>Servicios que Ofrecemos</h2>
+    <section class="cont-card">
+            <div class="title-cards">
+                <h2>Servicios que Ofrecemos</h2>
+            </div>
+        <div class="container-card">
+            
+        <div class="card">
+            <figure>
+                <img src="/Colegio/core/static/img/foto1.jpg">
+            </figure>
+            <div class="contenido-card">
+                <h3>Registrar notas</h3>
+                <p>Podemos registrar las notas de los alumnos</p>
+                <a href="/colegio/core/templates/notas.html">seleccionar</a>
+            </div>
         </div>
-    <div class="container-card">
-        
-    <div class="card">
-        <figure>
-            <img src="/colegio/core/static/img/costos.jpg">
-        </figure>
-        <div class="contenido-card">
-            <h3>Registrar notas</h3>
-            <p>Podemos registrar las notas de los alumnos</p>
-            <a href="#">Leer Màs</a>
-        </div>
-    </div>
-    <div class="card">
-        <figure>
-            <img src="/colegio/core/static/img/costos.jpg">
-        </figure>
-        <div class="contenido-card">
-            <h3>Registrar asistencia</h3>
-            <p>Podemos registrar la asistencia de los alumnos</p>
-            <a href="#">Leer Màs</a>
-        </div>
-    </div>
-    <div class="card">
-        <figure>
-            <img src="/colegio/core/static/img/costos.jpg">
-        </figure>
-        <div class="contenido-card">
-            <h3>Registrar anotaciones</h3>
-            <p>Podemos registrar las anotaciones de los alumnos</p>
-            <a href="#">Leer Màs</a>
-        </div>
-    </div>
-    </div>
+        <div class="card">
+            <figure>
+                <img src="/Colegio/core/static/img/foto2.jpg"> 
+            </figure>
+            <div class="contenido-card">
+                <h3>Registrar asistencia</h3>
+                <p>Podemos registrar la asistencia de los alumnos</p>
+                <a href="/colegio/core/templates/asistencia.html">seleccionar</a>
+            </div>
 
-       
-
+        </div>
+        <div class="card">
+            <figure>
+                <img src="/Colegio/core/static/img/foto3.jpg">
+            </figure>
+            <div class="contenido-card">
+                <h3>Registrar anotaciones</h3>
+                <p>Podemos registrar las anotaciones de los alumnos</p>
+                <a href="/colegio/core/templates/anotaciones.html">seleccionar</a>
+            </div>
+    
     </section>
+    <footer >
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <img src="/colegio/core/static/img/logo.png" >
+                <span class="footer-info">322960714-322960715</span>
+                <span class="footer-info">lindustrial@educmvm.cl</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">Horario de Atención</span>
+                    <a href="" class="menu-item-footer">Lunes a Viernes</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">legal</span>
+                    <a href="" class="menu-item-footer">Política de privacidad</a>
+                    <a href="" class="menu-item-footer">Cookies</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">Direcion</span>
+                    <a href="" class="menu-item-footer">Avenida Frei 4137 - Miraflores</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">Donaciones</span>
+                    <a href="/colegio/core/templates/Donacion.html" class="menu-item-footer">PAYPAL</a>
+                </div>
+            </div>
 
-    
-    
+            <div class="footer-content-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3345.2530159595476!2d-71.507889!3d-33.023464!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de9935aaad0d%3A0x81e9a95f381b3c7f!2sLiceo%20Industrial%20Miraflores!5e0!3m2!1ses-419!2sus!4v1683690807170!5m2!1ses-419!2sus" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <span class="copyright">Formando los tecnicos que chile necesita</span>
+        </div>
+    </footer>
 </body>
 </html>
