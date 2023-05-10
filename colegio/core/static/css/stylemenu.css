@@ -60,6 +60,7 @@ img {
 
 .header {
     height: 60vh !important;
+
     background: url(/colegio/core/static/img/header1.jpg) no-repeat center;
     background-size: cover;
 }

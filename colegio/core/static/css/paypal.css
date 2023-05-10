@@ -47,6 +47,7 @@ img {
 
 .card-paypal{
     margin-top: 100px;
+
 }
 /**footer**/
 
@@ -160,4 +161,5 @@ footer .social-link:nth-of-type(2) {
 footer .social-link:nth-of-type(3) {
     /*Nth of type inside that container*/
     background-image: url(/fotosfooter/InstagramBlanco.png);
+
 }
