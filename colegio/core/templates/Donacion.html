@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/colegio/core/static/css/paypal.css">
+    <link rel="stylesheet" href="{% static '../static/css/paypal.css' %}">
     <title>Donacion</title>
-    <link rel="icon" type="image/x-icon" href="/colegio/core/static/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{% static '../static/img/favicon.ico' %}">
     
 <body class="bodypaypal">
     <section>
@@ -15,7 +16,7 @@
         <div class="head">
 
             <div class="logo">
-                <img id="img" src="/colegio/core/static/img/logo.png">
+                <img id="img" src="{% static '../static/img/logo.png' %}">
             </div>
 
             <nav class="navbar">
@@ -26,6 +27,9 @@
 
         </div>
     </section>
+
+    
+
     <div class="container">
         <div class="row">
             <div class="col">
@@ -73,7 +77,7 @@
     <footer >
         <div class="footer-container">
             <div class="footer-content-container">
-                <img src="/colegio/core/static/img/logo.png" >
+                <img src="{% static '../static/img/logo.png' %}" >
                 <span class="footer-info">322960714-322960715</span>
                 <span class="footer-info">lindustrial@educmvm.cl</span>
             </div>
