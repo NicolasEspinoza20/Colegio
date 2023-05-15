@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-    <link rel="stylesheet" href="/Colegio/core/static/css/stylemenu.css">
+    <link rel="stylesheet" href="{% static '../static/css/stylemenu.css' %}">
     <title>Menu</title>
-    <link rel="icon" type="image/x-icon" href="/Colegio/core/static/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{% static '../static/img/favicon.ico' %}">
 
 
 </head>
@@ -18,7 +19,7 @@
 
         <div class="logo">
 
-            <img id="img" src="/Colegio/core/static/img/logo.png">
+            <img id="img" src="{% static '../static/img/logo.png' %}">
 
         </div>
 
@@ -45,7 +46,7 @@
             
         <div class="card">
             <figure>
-                <img src="/Colegio/core/static/img/foto1.jpg">
+                <img src="{% static '../static/img/foto1.jpg' %}">
             </figure>
             <div class="contenido-card">
                 <h3>Registrar notas</h3>
@@ -55,7 +56,7 @@
         </div>
         <div class="card">
             <figure>
-                <img src="/Colegio/core/static/img/foto2.jpg"> 
+                <img src="{% static '../static/img/foto2.jpg' %}"> 
             </figure>
             <div class="contenido-card">
                 <h3>Registrar asistencia</h3>
@@ -66,7 +67,7 @@
         </div>
         <div class="card">
             <figure>
-                <img src="/Colegio/core/static/img/foto3.jpg">
+                <img src="{% static '../static/img/foto3.jpg' %}">
             </figure>
             <div class="contenido-card">
                 <h3>Registrar anotaciones</h3>
@@ -78,7 +79,7 @@
     <footer >
         <div class="footer-container">
             <div class="footer-content-container">
-                <img src="/colegio/core/static/img/logo.png" >
+                <img src="{% static '../static/img/logo.png' %}" >
                 <span class="footer-info">322960714-322960715</span>
                 <span class="footer-info">lindustrial@educmvm.cl</span>
             </div>
