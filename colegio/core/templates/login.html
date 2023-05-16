@@ -1,31 +1,115 @@
 {% load static %}
 <!DOCTYPE html>
-<html leng=”en”>
+<html lang="en">
+
 <head>
-    <meta charset=”UTF-8”>
-    <meta http-equiv=”X-UA-COMPATIBLE” content=”IE-edge”>
-    <meta name=viewpor” content= width=device-width,
-    Initial-scale=1.0”>
-    <title>Inicio</title>
-    <link rel="stylesheet" href="/colegio/core/static/css/stylemenu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class="login">
-    <form action="">
-        <h1 class="title">Login</h1>
-        <label>
-            <i class="fa-solid fa-user"></i>        
-            <input type="text" id="username">
-        </label>
-        <label>
-            <i class="fa-solid fa-lock"></i>            
-            <input type="password" id="password">
-            </label>
-            <a href="#" class="link">¿Olvido su clave? </a>
+    
+    <link rel="stylesheet" type="text/css" href="{% static '../static/css/stylemenu.css' %}">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="{% static '../static/img/favicon.ico' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static '../static/css/stylemenu.css' %}" th:href="@{/colegio/core/static/css/stylemenu.css}">
 
-            <button id="button">Login</button>
-    </form>
+<body>
+    <header class="head">
+        <div class="logo">
 
-    <script src=”main.js”></script>
+            <img id="img" src="{% static '../static/img/logo.png' %}">
+
+        </div>
+
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <section class="login-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 login-sec">
+                    <h2 class="text-center">Login</h2>
+                    <form class="login-form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="text-uppercase">Usuario</label>
+                            <input type="text" class="form-control" placeholder="">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="text-uppercase">Contraseña</label>
+                            <input type="password" class="form-control" placeholder="">
+                        </div>
+
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                <small>Remember Me</small>
+                            </label>
+                            <button type="submit" class="btn btn-login float-right">Ingresar</button>
+                        </div>
+
+                    </form>
+                    <div class="copy-text"><i class="fa fa-heart"></i> <a
+                            href=""></a></div>
+                </div>
+                <div class="col-md-8 banner-sec">
+
+                    <div class="carousel-item active">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="banner-text">
+                                <h2>This is First Slide</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <br>
+ 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <img src="{% static '../static/img/logo.png' %}" >
+                <span class="footer-info">322960714-322960715</span>
+                <span class="footer-info">lindustrial@educmvm.cl</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">Horario de Atención</span>
+                    <a href="" class="menu-item-footer">Lunes a Viernes</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">legal</span>
+                    <a href="" class="menu-item-footer">Política de privacidad</a>
+                    <a href="" class="menu-item-footer">Cookies</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">Direcion</span>
+                    <a href="" class="menu-item-footer">Avenida Frei 4137 - Miraflores</a>
+                </div>
+                <div class="footer-content-container">
+                    <span class="menu-title">Donaciones</span>
+                    <a href="/colegio/core/templates/Donacion.html" class="menu-item-footer">PAYPAL</a>
+                </div>
+            </div>
+
+            <div class="footer-content-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3345.2530159595476!2d-71.507889!3d-33.023464!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de9935aaad0d%3A0x81e9a95f381b3c7f!2sLiceo%20Industrial%20Miraflores!5e0!3m2!1ses-419!2sus!4v1683690807170!5m2!1ses-419!2sus"
+                    width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <span class="copyright">Formando los tecnicos que chile necesita</span>
+        </div>
+    </footer>
 </body>
-<html>
+
+</html>

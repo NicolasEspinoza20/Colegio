@@ -1,10 +1,21 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+     min-height: 100vh;
+     font-family: Arial; 
+
+    }
+
+
 .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 63px;
     background: #171717;
-    position: fixed;
     width: 100%;
     z-index: 100;
 }
@@ -43,22 +54,21 @@ img {
 .card{
     top: 50px;
    margin-bottom: 123px;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-}
-
-.header {
-    height: 12vh;
-    background-size: none;
     
 }
 
-Anotacion{
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 12vh;
+    background-size: none;
+    margin-top: 20px;
+}
+
+
+
+Anotacion {
     height: 300px;
 }
 
@@ -66,6 +76,7 @@ Anotacion{
     margin-bottom: 85px;
     margin-left: 300px;
     margin-right: 300px;
+    margin-top: 30px;
 }
 
 /**footer**/
@@ -181,3 +192,9 @@ footer .social-link:nth-of-type(3) {
     /*Nth of type inside that container*/
     background-image: url(/fotosfooter/InstagramBlanco.png);
 }
+
+
+.title{
+    margin-top: 20px;
+}
+
