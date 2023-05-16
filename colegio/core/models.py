@@ -14,7 +14,7 @@ class Apoderado(models.Model):
     apmaterno  = models.CharField(max_length=50, verbose_name='Apellido materno')
     
     def __str__(self):
-        return self.Apoderado
+        return self.primer_nombre
 
 class Alumno(models.Model):
     id_alumno = models.AutoField (primary_key=True , verbose_name='Id Alumno')
@@ -24,7 +24,7 @@ class Alumno(models.Model):
     apmaterno  = models.CharField(max_length=50, verbose_name='Apellido materno')
 
     def __str__(self):
-        return self.Alumno
+        return self.primer_nombre
 
 
 class Profesor(models.Model):
@@ -33,11 +33,9 @@ class Profesor(models.Model):
     segundo_nombre = models.CharField(max_length=50, verbose_name='Segundo Nombre')
     appaterno  = models.CharField(max_length=50, verbose_name='Apellido Paterno')
     apmaterno  = models.CharField(max_length=50, verbose_name='Apellido materno')
-    nombre_usuario = models.CharField(max_length=50, verbose_name='Nombre Usuario ')
-    contraseña = models.CharField(max_length=50, verbose_name='Contraseña')
 
     def __str__(self):
-        return self.Profesor
+        return self.primer_nombre
 
 class Anotaciones(models.Model):
 
@@ -45,7 +43,7 @@ class Anotaciones(models.Model):
     definicion= models.CharField(max_length=200, verbose_name='Definicion')
 
     def __str__(self):
-        return self.Anotaciones
+        return self.id_anotacion
 
 class Asistencia(models.Model):
 
@@ -54,14 +52,14 @@ class Asistencia(models.Model):
     estado = models.CharField(max_length=200, verbose_name='Estado')
 
     def __str__(self):
-        return self.Asistencia
+        return self.id_asistencia
 
 class Curso(models.Model):        
     id_curso= models.AutoField(primary_key=True, verbose_name='Id Curso')
     seccion= models.CharField(max_length=50, verbose_name='Seccion')
 
     def __str__(self):
-        return self.Curso
+        return self.id_curso
 
 
 class Nota(models.Model):        
@@ -69,7 +67,7 @@ class Nota(models.Model):
     calificacion= models.CharField(max_length=50, verbose_name='Calificacion')
 
     def __str__(self):
-        return self.Nota
+        return self.id_nota
 
 
 
