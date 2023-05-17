@@ -7,6 +7,13 @@ body {
      min-height: 100vh;
      font-family: Arial; 
 
+     background: #DE6262;
+     /* fallback for old browsers */
+     background: -webkit-linear-gradient(to bottom, #113581, #bd2f2f);
+     /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to bottom, #113581, #DE6262);
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     }
 
 
@@ -22,6 +29,13 @@ body {
 
 .body-fondo{
     background: url(/colegio/core/static/img/header.jpg);
+
+    background: #DE6262;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #113581, #bd2f2f);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #113581, #DE6262);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .navbar {
     display: flex;
