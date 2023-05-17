@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "monitoreo-escolar-386701",
+  "private_key_id": "4e76ee29c18ccafbe0de1d4a78b9da96b11884bf",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCeVYWpxNap/48y\ntwQ2vo8CAYZBwgYcQP210CF40X1x1ybXmOLsOBFUblF71M3alr/RBqh8Nua+8Ile\nCV/zYguogebXt4UMopIgFXxDi7U4a43VrWwT2wHRILVsJDYVMlu24edDO8E/3OS8\nrZwVA4AyAP3H1BFt4o5eM8DZ3A+kI1QvxhDQii4mEuldxnaEVDDbVqF1GFYdzH5F\nQSVo6welAQVPJWNXXsTd/9GFgbHF0uKUl9v0N7MuclRtA8u+oUgg9lvEcLCnADNV\n5dhxvm/Rmnt+BFIHpJEFRAW/zbBwMaRFwKu68VoyYYl9aaiMS5rt2PAzQYNfZwW5\nxQRqaVAVAgMBAAECggEAKgQJzy4zxLLTXiLg1GIm8uJSrTp+gprgeJG9gCEfR8lP\nPmEMvqB2QNBxgQnMgpgEWMSKi0PKYZrU6QZV1vEKpPGrv0ys2th9LFRnQElfkpQ/\n9BbsGizAw60JV6QYUfGmEtbJlrbRpk/IxyTOyWi/aQWIUrG82ksHeooDQAy8fdKS\n4JAWZc+4Mjs7u/GVzfjuOMeTnXd2YeD1moBjsaAIlopXhri+JPFPDXnqZIZIQw8F\nomxKZDQUuf9jRkGHLC6zVXF9IEFTtYTpkkM51WUqxBiEyEyagUy0GvKX1LHB5oUD\ntN27SaywoPpyv7u02vBu9kVrqugoaDoKuXrbL2wj1QKBgQDc/zpZ2VmVDN9GaQxE\n4ht3s9RyCeBzFWnBxwaTIdBQe2QUfXpqj4VznLjLkGuEa8TzHpRKXUvQRWId8qoM\nRQigQdtFBQKcfNrXpEavpk26t7gqqfzm/DwWlbPzVV/GSv3dNxQNN7llcAE02ExW\nztFvp8sd4IqoZZmcmX6kgVB72wKBgQC3aX+7perlwyQImMPiLiQ61FAHCl9iLmr1\nNBU86i3sGlWevOiIrQHXo67NkoKFehikO+J+ucHgM2Jc0JHtygeYQE5o9tSTkhsg\nUw/P49Em9Vvgnk8flwbVNL69CLUm5EmEHIFARHst1aigN1L7DsmlKWcZ0IfoaOO6\nLs9aAOyezwKBgEqAyN0thyPWmRcVpws55uSt/XsMlVx25ZZsUG0dwyq+zniR7Mkr\n5WOafDo0T+ruohEMSBXh6gMmwPMzsdw9EbFlQlS8Yar79JMqUKI6wI2oDjBj6ly8\nwE0k3uuz5nvlIDyJqvrhxGDMJ7v3B5VkV/r6aGGEJ3qp9eVzYdx3s/htAoGBALb4\nTRACxiHuGW1mEMv7ofL6SNetNlh43AS/r4w0Rhmqb83KwONQTG02AjVcOk8z7Y8x\nmpM3drzWJgNXoqyohgkR5eb6jjilYeBOXJDUwZru3HhpFZ/7Bzr8wmdMX4Nr7Bca\nZKqbZpLj+bPTXTnNl8XnVs4+5MYqlTvwZLRyBZurAoGBAKfYdbCV9KCfpLL0aHqM\nJmgE2ryIT/pUM8v0HPmrndKXvIfnJFc+5zMwI1XSVEQyVUR8hCy22IxiLvFma/qu\nG3TrsW3SgcwMOBX/ENX+Z0+Vs5+DJA5pmc5NHWyC9MTPlZdhqZWlTQdWCtWbMLlt\n2SdIcL7gvxjNJfi5rVyNjzKp\n-----END PRIVATE KEY-----\n",
+  "client_email": "monitoreo-escolar@monitoreo-escolar-386701.iam.gserviceaccount.com",
+  "client_id": "113893439241343838370",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoreo-escolar%40monitoreo-escolar-386701.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
