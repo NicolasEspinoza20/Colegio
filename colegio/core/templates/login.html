@@ -20,7 +20,7 @@
         </div>
 
         <nav class="navbar">
-            <a href="#">Inicio</a>
+            <a href="{% url 'login' %}">Inicio</a>
             <a href="#">Nosotros</a>
             <a href="#">Contacto</a>
         </nav>
@@ -47,9 +47,9 @@
                         <div class="form-check">
                             <label class="form-check-label">
                                 <input type="checkbox" class="form-check-input">
-                                <small>Remember Me</small>
+                                <small>Recordarme</small>
                             </label>
-                            <button type="submit" class="btn btn-login float-right">Ingresar</button>
+                            <a href="{% url 'menu' %}" type="submit" class="btn btn-login float-right"  >Ingresar</a>
                         </div>
 
                     </form>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="footer-content-container">
                     <span class="menu-title">Donaciones</span>
-                    <a href="/colegio/core/templates/Donacion.html" class="menu-item-footer">PAYPAL</a>
+                    <a href="{% url 'donacion' %}" class="menu-item-footer">PAYPAL</a>
                 </div>
             </div>
 
