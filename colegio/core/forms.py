@@ -54,7 +54,7 @@ class AlumnoForm(forms.Form):
 
     class Meta:
         model = Alumno
-        fields =  ['nombre_alumno','run_alumno','dv_alumno', 'nombre_alumno','appaterno_alumno','apmaterno_alumno']
+        fields =  ['id_alumno','nombre_alumno','run_alumno','dv_alumno','appaterno_alumno','apmaterno_alumno']
 
 class ApoderadoForm(forms.Form):
     nombre_usuario = forms.CharField(max_length=50, )
@@ -65,4 +65,4 @@ class ApoderadoForm(forms.Form):
 
     class Meta:
         model = Apoderado
-        fields =  ['id_apoderado','nombre_usuario','contraseña','nombre_aopderado','appaterno_apoderado','apmaterno_apoderado']
+        fields =  ['id_apoderado','nombre_usuario','contraseña','nombre_apoderado','appaterno_apoderado','apmaterno_apoderado']
