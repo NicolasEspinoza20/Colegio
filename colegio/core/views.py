@@ -31,3 +31,13 @@ def admincreacion(request):
 
 def cursos(request):
     return render(request,'cursos.html')
+
+def adminalumno(request):
+    return render(request,'admin/adminalumno.html')
+
+def adminasistencia(request):
+    return render(request,'admin/adminasistencia.html')
+
+def adminprofesor(request):
+    return render(request,'admin/adminprofesor.html')
+
