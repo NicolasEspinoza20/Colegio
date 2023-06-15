@@ -48,23 +48,21 @@ class ProfesorForm(forms.Form):
 class AlumnoForm(forms.Form):
     run_alumno = forms.CharField(max_length=8)
     dv_alumno = forms.CharField(max_length=1)
-    primer_nombre = forms.CharField(max_length=50, )
-    segundo_nombre = forms.CharField(max_length=50, )
-    appaterno  = forms.CharField(max_length=50, )
-    apmaterno  = forms.CharField(max_length=50, )
+    nombre_alumno = forms.CharField(max_length=50, )
+    appaterno_alumno  = forms.CharField(max_length=50, )
+    apmaterno_alumno  = forms.CharField(max_length=50, )
 
     class Meta:
         model = Alumno
-        fields =  ['nombre_alumno','run_alumno','dv_alumno', 'primer_nombre', 'segundo_nombre','appaterno','apmaterno']
+        fields =  ['nombre_alumno','run_alumno','dv_alumno', 'nombre_alumno','appaterno_alumno','apmaterno_alumno']
 
 class ApoderadoForm(forms.Form):
     nombre_usuario = forms.CharField(max_length=50, )
     contraseña = forms.CharField(max_length=50, )
-    primer_nombre = forms.CharField(max_length=50, )
-    segundo_nombre = forms.CharField(max_length=50, )
-    appaterno  = forms.CharField(max_length=50, )
-    apmaterno  = forms.CharField(max_length=50, )
+    nombre_apoderado = forms.CharField(max_length=50, )
+    appaterno_apoderado  = forms.CharField(max_length=50, )
+    apmaterno_apoderado  = forms.CharField(max_length=50, )
 
     class Meta:
         model = Apoderado
-        fields =  ['id_apoderado','nombre_usuario','contraseña','primer_nombre', 'segundo_nombre','appaterno','apmaterno']
+        fields =  ['id_apoderado','nombre_usuario','contraseña','nombre_aopderado','appaterno_apoderado','apmaterno_apoderado']

@@ -58,7 +58,7 @@ class AnotacionesAdmin(admin.ModelAdmin):
 class Asistencia(models.Model):
 
     id_curso= models.ForeignKey('Alumno', on_delete=models.CASCADE,null=True, blank=True,related_name='id_curso')
-    id_alumno= models.ForeignKey('Alumno',on_delete=models.CASCADE,null=True, blank=True,related_name='id_alumno')
+    id_alumno= models.ForeignKey('Alumno',on_delete=models.CASCADE,null=True, blank=True,related_name='asistencias')
     fecha = models.DateField(verbose_name='Fecha')
     estado = models.CharField(max_length=200, verbose_name='Estado')
 
@@ -71,7 +71,7 @@ class AsistenciaAdmin(admin.ModelAdmin):
 class Curso(models.Model):        
     
     
-    id_alumno= models.ForeignKey('Alumno',on_delete=models.CASCADE,null=True, blank=True,related_name='id_alumno')
+    id_alumno= models.ForeignKey('Alumno',on_delete=models.CASCADE,null=True, blank=True,related_name='cursos')
     id_profesor= models.ForeignKey('Profesor',on_delete=models.CASCADE,null=True, blank=True,related_name='id_profesor')
     curso= models.CharField(max_length=20, verbose_name='curso')
 
