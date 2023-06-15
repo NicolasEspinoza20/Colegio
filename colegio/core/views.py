@@ -25,3 +25,9 @@ def anotaciones(request):
 
 def donacion(request):
     return render(request,'Donacion.html')
+
+def admincreacion(request):
+    return render(request,'admin/admincreacion.html')
+
+def cursos(request):
+    return render(request,'cursos.html')

@@ -11,4 +11,7 @@ urlpatterns = [
     path('donacion',views.donacion,name='donacion'),
     path('menu',views.menu,name='menu'),
     path('notas',views.notas,name='notas'),
+    path('admincreacion',views.admincreacion,name='admincreacion'),
+    path('cursos',views.cursos,name='cursos')
+    
 ]
