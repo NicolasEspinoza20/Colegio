@@ -36,14 +36,13 @@ def lista_apoderado():
 #definir los forms igual al models 
 
 class ProfesorForm(forms.Form):
-    primer_nombre = forms.CharField(max_length=50, )
-    segundo_nombre = forms.CharField(max_length=50, )
-    appaterno  = forms.CharField(max_length=50, )
-    apmaterno  = forms.CharField(max_length=50, )
+    nombre_profesor = forms.CharField(max_length=50, )
+    appaterno_profesor  = forms.CharField(max_length=50, )
+    apmaterno_profesor  = forms.CharField(max_length=50, )
 
     class Meta:
         model = Profesor
-        fields =  ['id_profesor', 'primer_nombre', 'segundo_nombre','appaterno','apmaterno']
+        fields =  ['id_profesor', 'nombre_profesor','appaterno_profesor','apmaterno_profesor']
 
 class AlumnoForm(forms.Form):
     run_alumno = forms.CharField(max_length=8)
